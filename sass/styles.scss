@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,700&display=swap");
+:root {
+  --padding-container: 100px 0;
+  --color-title: #001a49;
+  --color-fuente: #212F3C;
+  --color-fondo: #ffffff;
+}
+
+[tema=dark] {
+  --color-fuente: #ffffff;
+  --color-fondo: #212F3C;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  position: relative;
+  padding-bottom: 3em;
+  min-height: 100vh;
+  
+ 
+}
+/*Scroll personalizado*/
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #1B2631;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #f0ad4e;
+  border-radius: 5px;
+}
+
+.featurette-divider{
+  margin: 5rem 0;;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  max-height: 800px;
+  position: relative;
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  color: white;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5490196078) 0%, rgba(0, 0, 0, 0.5490196078) 100%), url(../images/paes.png);
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+  z-index: -1;
+}
+
+.hero_container {
+  max-width: 800px;
+  --padding-container:0;
+  display: grid;
+  grid-auto-rows: max-content;
+  align-content: center;
+  gap: 1em;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.hero_title {
+  font-size: 3rem;
+}
+
+.hero_paragraph {
+  margin-bottom: 20px;
+}
+
+.cta {
+  display: inline-block;
+  background-color: #2091f9;
+  justify-self: center;
+  color: white;
+  text-decoration: none;
+  padding: 13px 30px;
+  border-radius: 32px;
+}
+
+/*quiz*/
+.heroQ {
+  text-align: center;
+  background: #273746 ;
+  color: #fff;
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+
+.containerQ {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  
+}
+
+.preguntas {
+  border: 2px solid #34495E;
+  border-radius: 7px;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 25px;
+}
+
+/*
+.video{
+    margin-top: 1rem;
+    margin: 0 auto ;
+    color: black;
+
+    cursor: pointer;
+    color: black;
+    background-color:#76d7c8;
+    text-decoration: none;
+    display: grid;
+    overflow: hidden;
+    gap: 1em;
+    justify-items: center;
+
+}
+*/
+.video-respuesta {
+  border-radius: 7px;
+  border: 5px dashed #34495E;
+  display: flex;
+  gap: 1em;
+  justify-items: center;
+  width: 70%;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.alternativa {
+  display: block;
+  padding: 7px;
+  border-radius: 7px;
+  border: 1px dashed #ccc;
+  margin-bottom: 10px;
+}
+
+.alternativaLista {
+  display: block;
+  padding: 7px;
+  border-radius: 7px;
+  border: 1px dashed #ccc;
+  margin-bottom: 3px;
+}
+
+.alternativa:hover {
+  background: #B3B6B7;
+  cursor: pointer;
+}
+
+/*
+.botonQ{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding: 10px;
+
+    background-color: #76d7c8;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+button:hover{
+    background: #000;
+    color: #fff;
+}
+*/
+.botonE{
+  display: none;
+}
+
+.botonE:hover{
+  background-color: rgba(0, 0, 0, 0.514);
+}
+
+.pregunta {
+  margin-bottom: 15px;
+}
+
+/*# sourceMappingURL=styles.css.map */
+
+/*Usuario*/
+
+.card {
+  border: none;
+  border-radius: 10px
+}
+
+.c-details span {
+  font-weight: 300;
+  font-size: 13px
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  background-color: #eee;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 39px
+}
+
+.badge span {
+  background-color: #fffbec;
+  width: 60px;
+  height: 25px;
+  padding-bottom: 3px;
+  border-radius: 5px;
+  display: flex;
+  color: #fed85d;
+  justify-content: center;
+  align-items: center
+}
+
+.progress {
+  height: 10px;
+  border-radius: 10px
+}
+
+.progress div {
+  background-color: red
+}
+
+.text1 {
+  font-size: 14px;
+  font-weight: 600
+}
+
+.text2 {
+  color: #a5aec0
+}
+footer {
+ 
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  
+  ;
+}
+
+
+.carousel-nav-icon {
+  height: 48px;
+  width: 48px;
+}
+.carousel-item {
+  .col, .col-sm, .col-md {
+     margin: 8px;
+     height: 300px;
+     background-size: cover;
+     background-position: center center;
+  }
+}
+
+
+
+
+.carousel-nav-icon {
+  height: 48px;
+  width: 48px;
+}
+.carousel-item {
+  .col, .col-sm, .col-md {
+     margin: 8px;
+     height: 300px;
+     background-size: cover;
+     background-position: center center;
+  }
+}
+
+
+
+
+/* nothing below this point is needed*/
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,600,700,800,900&display=swap');
+
+h1 {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 700;
+}
+

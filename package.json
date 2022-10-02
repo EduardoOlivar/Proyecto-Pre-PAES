@@ -1,0 +1,25 @@
+{
+  "name": "pre-paes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EduardoOlivar/Pre-Paes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EduardoOlivar/Pre-Paes/issues"
+  },
+  "homepage": "https://github.com/EduardoOlivar/Pre-Paes#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.1",
+    "jquery": "^3.6.1",
+    "jquery-validation": "^1.19.5",
+    "sass": "^1.55.0"
+  }
+}
